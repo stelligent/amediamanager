@@ -1,0 +1,14 @@
+[
+  {
+    "ParameterKey": "KeyName",
+    "ParameterValue": "petro_labs"
+  },
+  {
+    "ParameterKey": "VPCAvailabilityZone1",
+    "ParameterValue": "eu-east-1a"
+  },
+  {
+    "ParameterKey": "VPCAvailabilityZone2",
+    "ParameterValue": "eu-east-1c"
+  }
+]

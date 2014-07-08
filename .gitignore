@@ -1,7 +1,6 @@
 app.properties
 s3Config.properties
 deploy/
-launch-params.json
 
 
 # Package Files #
