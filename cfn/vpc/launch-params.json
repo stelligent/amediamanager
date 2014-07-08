@@ -5,10 +5,10 @@
   },
   {
     "ParameterKey": "VPCAvailabilityZone1",
-    "ParameterValue": "eu-east-1a"
+    "ParameterValue": "eu-west-1a"
   },
   {
     "ParameterKey": "VPCAvailabilityZone2",
-    "ParameterValue": "eu-east-1c"
+    "ParameterValue": "eu-west-1b"
   }
 ]
