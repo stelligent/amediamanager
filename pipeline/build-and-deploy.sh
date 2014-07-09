@@ -11,10 +11,6 @@ gem install aws-sdk-core --pre --no-ri --no-rdoc
 export stack_name=AMM_App-$timestamp
 ruby -e 'require "opendelivery"' -e "OpenDelivery::Domain.new('$region').set_property '$sdb_domain','$pipeline_instance_id', 'stack_name', '$stack_name'"
 aws cloudformation create-stack  --stack-name $stack_name  --template-body file://cfn/vpc/amm-master.cfn.json --region ${region}  --disable-rollback  --capabilities="CAPABILITY_IAM" \
---parameters \
-  ParameterKey=KeyName,ParameterValue=$petro_labs \
-  ParameterKey=VPCAvailabilityZone1,ParameterValue=$eu-west-1a \
-  ParameterKey=VPCAvailabilityZone2,ParameterValue=$eu-west-1b 
 
 # make sure we give AWS a chance to actually create the stack...
 sleep 30
