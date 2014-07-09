@@ -31,11 +31,7 @@ def create_view(pipeline, triggerjob) {
 def pipelines =  [
   "Continuous Delivery Pipeline":[
     "commit":["trigger", "commit"], 
-    "acceptance": ["build-and-deploy-vpc", "test-application", "terminate-environment"]
-    ],
-  "Production Delivery Pipeline":[
-    "preprod" : ["production-trigger", "build-and-deploy-for-prod-vpc", "smoke-test"], 
-    "production" : ["bluegreen"]
+    "acceptance": ["build-and-deploy", "test-application"]
     ]
   ]
 
@@ -61,10 +57,7 @@ pipelines.each { pipeline, stages ->
       configure pipelineConfig(jobName, stage)
       name "${jobName}-dsl"
       multiscm {
-        git("https://github.com/stelligent/honolulu_answers_cookbooks.git", "master") { node ->
-          node / skipTag << "true"
-        }
-        git("https://github.com/stelligent/honolulu_answers.git", "master") { node ->
+        git("https://github.com/stelligent/amediamanager.git", "master") { node ->
           node / skipTag << "true"
         }
       }
@@ -96,56 +89,5 @@ pipelines.each { pipeline, stages ->
         }
       }
     }
-  }
-}
-
-// self service jobs
-job {  
-  name "self-service-environment-create-dsl"
-  parameters {
-    stringParam("email", "", "The email address of the owner of the environment.")
-    stringParam("SHA", "HEAD", "The Git SHA of the revision you want to deploy. The default is HEAD, which will just get the latest code from the repo.")
-  }
-  multiscm {
-    git("https://github.com/stelligent/honolulu_answers_cookbooks.git", "master") { node ->
-      node / skipTag << "true"
-    }
-    git("https://github.com/stelligent/honolulu_answers.git", "master") { node ->
-      node / skipTag << "true"
-    }
-  }
-  steps {
-    shell("pipeline/self-service-build-and-deploy-vpc.sh")
-  }
-  wrappers {
-    rvm("1.9.3")
-  }
-  publishers {
-    extendedEmail("\$email", "Your self service environment is ready.", """\$PROJECT_NAME - Build # \$BUILD_NUMBER - \$BUILD_STATUS:
-
-    Check console output at \$BUILD_URL to view the results.""") {
-      trigger("Success")
-    }
-  }
-}
-
-job {  
-  name "self-service-environment-delete-dsl"
-   parameters {
-    stringParam("stack_name", "", "The CloudFormation stack name to clean up")
-   }
-   multiscm {
-    git("https://github.com/stelligent/honolulu_answers_cookbooks.git", "master") { node ->
-      node / skipTag << "true"
-    }
-    git("https://github.com/stelligent/honolulu_answers.git", "master") { node ->
-      node / skipTag << "true"
-    }
-  }
-  steps {
-    shell("pipeline/self-service-delete.sh")
-  }
-  wrappers {
-    rvm("1.9.3")
   }
 }
