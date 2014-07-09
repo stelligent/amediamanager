@@ -10,12 +10,11 @@ gem install trollop opendelivery --no-ri --no-rdoc
 gem install aws-sdk-core --pre --no-ri --no-rdoc
 export stack_name=AMM_App-$timestamp
 ruby -e 'require "opendelivery"' -e "OpenDelivery::Domain.new('$region').set_property '$sdb_domain','$pipeline_instance_id', 'stack_name', '$stack_name'"
-aws cloudformation create-stack  --stack-name $stack_name  --template-body file://cfn/vpc/amm-master.cfn.json  --parameters file://cfn/vpc/launch-params.json --region ${region}  --disable-rollback  --capabilities="CAPABILITY_IAM" \
+aws cloudformation create-stack  --stack-name $stack_name  --template-body file://cfn/vpc/amm-master.cfn.json --region ${region}  --disable-rollback  --capabilities="CAPABILITY_IAM" \
 --parameters \
-  ParameterKey=vpc,ParameterValue=$vpc \
-  ParameterKey=publicSubnet,ParameterValue=$publicSubnet \
-  ParameterKey=privateSubnetA,ParameterValue=$privateSubnetA \
-  ParameterKey=privateSubnetB,ParameterValue=$privateSubnetB
+  ParameterKey=KeyName,ParameterValue=$petro_labs \
+  ParameterKey=VPCAvailabilityZone1,ParameterValue=$eu-west-1a \
+  ParameterKey=VPCAvailabilityZone2,ParameterValue=$eu-west-1b 
 
 # make sure we give AWS a chance to actually create the stack...
 sleep 30
