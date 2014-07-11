@@ -2,7 +2,7 @@
 
 This document represents some information found along the way that may be useful.  
 
-For a proof of concept based on another repository the user will want to fork that repository.  However if the user would like to rename the repository something else and not have it be associated with the forked repository do the following:
+If a user wants to use another repository and contribute or modify it slightly they should fork the repository.  However if the user would like to rename the repository something else and not have it be associated with the forked repository do the following:
 
 **Based in Linux Command Line**
 
