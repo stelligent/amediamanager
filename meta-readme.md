@@ -32,7 +32,7 @@ For a proof of concept based on another repository the user will want to fork th
 * Next, the base_repo needs to be reinitialized to ensure that the Git repository is initialized correctly
   * Run the command `git init`
   * A message should confirm that the git repository was initialized or reinitialized
-* Additional commands need to be run to commit and add (push) the changes to the GitHub repository (online)
+* Additional commands need to be run to add, commit, and push the changes to the GitHub repository (online)
   * `git status` (optional, will show all the files that have been added as untracked)
   * `git add .` - This command adds all the untracked files that were copied to the repository
   * `git status` (optional, now this should show no untracked files, but all new files added to the repository)
