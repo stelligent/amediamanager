@@ -27,7 +27,7 @@ For a proof of concept based on another repository the user will want to fork th
   * The reason for doing this is that .git holds all repository information that tracks the repository and identifies as a .git repository and .gitignore contains any files or directories that should not be tracked in the repository
 * Once both of those directories are deleted, copy all of the content from "base_repo" to "new_repo" 
   * This accomplishes getting all relevant files from the "base_repo" to the "new_repo" without a git repository being associated with the content
-* Now, change directories so you are in the root directory of "base_repo"
+* Now, change directories to the root directory of "base_repo"
   * Validate that all of the files copied over correctly
 * Next, the base_repo needs to be reinitialized to ensure that the Git repository is initialized correctly
   * Run the command `git init`
