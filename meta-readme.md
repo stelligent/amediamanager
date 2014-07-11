@@ -1,4 +1,4 @@
-##Supplemental Information That May Be Useful
+##How to Duplicate a Repository and Use it For Something Else
 
 This document represents some information found along the way that may be useful.  
 
