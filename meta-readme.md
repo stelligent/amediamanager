@@ -8,6 +8,7 @@ For a proof of concept based on another repository the user will want to fork th
 
 **Pre-Requisites**
 * Access to a local VM or Linux machine command line with internet access (commands are based on Ubuntu)
+* A GitHub account
 * GitHub installed `apt-get install git` (see http://git-scm.com/download/linux for other versions)
 * Knowledge of Linux command line navigation and directory / copy operations (Ubuntu basic guide https://help.ubuntu.com/community/UsingTheTerminal)
 
@@ -15,7 +16,7 @@ For a proof of concept based on another repository the user will want to fork th
 * The purpose of doing the following is if it is desired to use a public or private Git repository for a completely independent project.  There will be no contributions back to the original project.  For instance, creating a Continous Delivery Pipeline for an open-source application.  
 
 **Steps**
-* In the GitHub WebUI, create a new repository and name it accordingly ("new_repo" for this document)
+* In the GitHub WebUI (https://github.com/), create a new repository and name it accordingly ("new_repo" for this document)
 * Clone the repository that will be used as the base for the new repository ("base_repo" for this document)
   * `git clone https://github.com/org_or_username/base_repo.git` (note: this URL is listed in the GitHub WebUI)
   * On the local machine there should now be a new directory with that repository contents within it; user will still be in home directory (there will be some output of the command saying whether clone was successful)
