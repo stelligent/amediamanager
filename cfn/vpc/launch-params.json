@@ -9,6 +9,6 @@
   },
   {
     "ParameterKey": "VPCAvailabilityZone2",
-    "ParameterValue": "eu-west-2b"
+    "ParameterValue": "us-west-2b"
   }
 ]
