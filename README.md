@@ -4,6 +4,6 @@ We used this repo as an input to demonstrate how to use Jenkins to manage the al
 
 This repository is used as an input to the Jenkins and Continous Delivery Pipeline implementation found at https://github.com/stelligent/amm_jenkins_cookbooks.
 
-If you would like to deploy this application without Jenkins please reference Evan Brown's blog posts [here](http://blogs.aws.amazon.com/application-management/post/Tx2DUJYZVBMJ92J/Part-1-Develop-Deploy-and-Manage-for-Scale-with-Elastic-Beanstalk-and-CloudForma)
+If you would like to deploy this application without Jenkins please reference Evan Brown's blog posts [here](http://blogs.aws.amazon.com/application-management/post/Tx2DUJYZVBMJ92J/Part-1-Develop-Deploy-and-Manage-for-Scale-with-Elastic-Beanstalk-and-CloudForma).
 
 Otherwise, please head over to https://github.com/stelligent/amm_jenkins_cookbooks and follow that readme.  
