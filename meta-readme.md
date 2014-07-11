@@ -7,7 +7,7 @@ For a proof of concept based on another repository the user will want to fork th
 **Based in Linux Command Line**
 
 **Pre-Requisites**
-* Access to a local VM or Linux machine with internet access (commands are based on Ubuntu)
+* Access to a local VM or Linux machine command line with internet access (commands are based on Ubuntu)
 * GitHub installed `apt-get install git` (see http://git-scm.com/download/linux for other versions)
 * Knowledge of Linux command line navigation and directory / copy operations (Ubuntu basic guide https://help.ubuntu.com/community/UsingTheTerminal)
 
