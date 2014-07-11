@@ -40,4 +40,4 @@ For a proof of concept based on another repository the user will want to fork th
   * `git push -u origin master` - pushes the repository to GitHub
 * Browse to the GitHub repository on GitHub and all of the files / directories should appear with the message "First Commit"
 
-Now a completely separate repository exists that can be used independently of the repository it is based on.  
+#### Now a completely separate repository exists that can be used independently of the repository it is based on.  
