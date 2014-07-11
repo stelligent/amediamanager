@@ -22,7 +22,9 @@ For a proof of concept based on another repository the user will want to fork th
   * On the local machine there should now be a new directory with that repository contents within it; user will still be in home directory (there will be some output of the command saying whether clone was successful)
 * In the same fashion, clone the new repository that you created in the first step with that repository's unique URL (make sure you are in your home directory and not in the "base_repo" directory that was just created)
 * Now, there will be two repository directories on your local file system, "new-repo" and "base_repo"
-* Change directories to "base_repo" and delete .git and .gitignore (the reason for doing this is that .git holds all repository information that tracks the repository and identifies as a .git repository and .gitignore contains any files or directories that should not be tracked in the repository)
+* Change directories to "base_repo" and delete .git (a directory) and .gitignore (a file)
+  * .gitignore may or may not exist but a .git directory certainly will exist and will be hidden ('ls -a' will show it)
+  * The reason for doing this is that .git holds all repository information that tracks the repository and identifies as a .git repository and .gitignore contains any files or directories that should not be tracked in the repository
 * Once both of those directories are deleted, copy all of the content from "base_repo" to "new_repo" 
   * This accomplishes getting all relevant files from the "base_repo" to the "new_repo" without a git repository being associated with the content
 * Now, change directories so you are in the root directory of "base_repo"
