@@ -1,6 +1,12 @@
 ## Amazon Media Manager (AMM) AWS Reference Implementation
 
-We used this repo to demonstrate how to use Jenkins to manage the scripted deployment of the AWS A Media Manager app.  This fork is not intended to be merged back into the original, and we don't plan on keeping it updated with any changes to made to the original. You will incur AWS charges while resources are in use. Use this application at your own risk!
+We used this repo to demonstrate how to use Jenkins to manage the already existing scripted deployment of the AWS A Media Manager app.  This fork is not intended to be merged back into the original, and we don't plan on keeping it updated with any changes to made to the original. You will incur AWS charges while resources are in use. Use this application at your own risk!
+
+This repository is used as an input to the Jenkins and Continous Delivery Pipeline implementation found at https://github.com/stelligent/amm_jenkins_cookbooks.
+
+If you would like to deploy this application without Jenkins 
+
+
 
 A great supplemental resource and detailed explanation of the application architecture and infrastructure and which this repository was forked is available here: http://blogs.aws.amazon.com/application-management/post/Tx1NV26L8WNB0QS/Part-2-Develop-Deploy-and-Manage-for-Scale-with-Elastic-Beanstalk-and-CloudForma
 
