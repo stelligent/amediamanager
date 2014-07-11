@@ -1,6 +1,6 @@
 ## Amazon Media Manager (AMM) AWS Reference Implementation
 
-We used this repo to demonstrate how to use Jenkins to manage the already existing CloudFormation scripted deployment of the AWS A Media Manager app.  This fork is not intended to be merged back into the original, and we don't plan on keeping it updated with any changes to made to the original. You will incur AWS charges while resources are in use. Use this application at your own risk!
+We used this repo as an input to demonstrate how to use Jenkins to manage the already existing CloudFormation scripted deployment of the Amazon Media Manager Application.  This fork is not intended to be merged back into the original, and we don't plan on keeping it updated with any changes to made to the original. You will incur AWS charges while resources are in use. Use this application at your own risk!
 
 This repository is used as an input to the Jenkins and Continous Delivery Pipeline implementation found at https://github.com/stelligent/amm_jenkins_cookbooks.
 
