@@ -1,19 +1,13 @@
 ##How to Duplicate a Repository and Use it For Something Else
 
-This document represents some information found along the way that may be useful.  
-
-If a user wants to use another repository and contribute or modify it slightly they should fork the repository.  However if the user would like to rename the repository something else and not have it be associated with the forked repository do the following:
-
-**Based in Linux Command Line**
+**Why would I want to do this**
+* The purpose of doing the following is if it is desired to use a public or private Git repository for a completely independent project.  There will be no contributions back to the original project.  For instance, creating a Cloud Deployment Pipeline for an open-source application.  
 
 **Pre-Requisites**
 * Access to a local VM or Linux machine command line with internet access (commands are based on Ubuntu)
 * A GitHub account
 * GitHub installed `apt-get install git` (see http://git-scm.com/download/linux for other versions)
 * Knowledge of Linux command line navigation and directory / copy operations (Ubuntu basic guide https://help.ubuntu.com/community/UsingTheTerminal)
-
-**Why would I want to do this**
-* The purpose of doing the following is if it is desired to use a public or private Git repository for a completely independent project.  There will be no contributions back to the original project.  For instance, creating a Continous Delivery Pipeline for an open-source application.  
 
 **Steps**
 * In the GitHub WebUI (https://github.com/), create a new repository and name it accordingly ("new_repo" for this document)
