@@ -2,6 +2,8 @@
 
 We used this repo to demonstrate how to use Jenkins to manage the scripted deployment of the AWS A Media Manager app.  This fork is not intended to be merged back into the original, and we don't plan on keeping it updated with any changes to made to the original. You will incur AWS charges while resources are in use. Use this application at your own risk!
 
+A great supplemental resource and detailed explanation of the application architecture and infrastructure and which this repository was forked is available here: http://blogs.aws.amazon.com/application-management/post/Tx1NV26L8WNB0QS/Part-2-Develop-Deploy-and-Manage-for-Scale-with-Elastic-Beanstalk-and-CloudForma
+
 
 ## Setting up the AMM application
 #### Prereqs:
@@ -9,7 +11,8 @@ We used this repo to demonstrate how to use Jenkins to manage the scripted deplo
 * [AWS CLI tool](https://aws.amazon.com/cli/) installed and configured. The quickest way to do this is by launching an Amazon Linux EC2 instance (as the AWS CLI is preinstalled), but you can [install it on your laptop as well](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-set-up.html), and then configure the application by using the command:
 
 
-    ```aws configure```
+    ```aws configure```  - Fill in your AWS Access Key ID, AWS Secret Access Key, Region, and Output Format
+
 
 Once your AWS CLI tools are set up, clone this repo and this command will build a Honolulu Answers application infrastructure and then deploy the app to it. *NOTE: To prevent OpsWorks errors, we've defaulted the instance size to ```c3.large```. You can find the CloudFormation code at [honolulu.template](https://github.com/stelligent/honolulu_answers/blob/master/infrastructure/config/honolulu.template)*.
 
